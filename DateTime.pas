@@ -23,4 +23,15 @@
     Print(1)
   else 
     Print('Даты одинаковы');
+  var (oneyear, twoyear):=ReadInteger2('Введите два года:');
+  Assert(twoyear>oneyear);
+  var sum:=0;
+  for var i:=oneyear to twoyear do
+  begin
+    if flag then
+    sum+=366
+    else
+      sum+=365;
+    end;
+    Print(sum)
 end.
