@@ -33,5 +33,7 @@
     else
       sum+=365;
     end;
-    Print(sum)
+    Print(sum);
+    var b:=ReadInteger;
+    Print(b*3600)
 end.
